@@ -1,0 +1,98 @@
+
+.closeModal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 30px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+}
+.closeModal:hover {
+  transform: scale(1.1);
+}
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(52, 73, 94, 0.8);
+  z-index: 50;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.7s;
+}
+.myModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 300px;
+  margin-left: -200px;
+  margin-top: -150px;
+  background: #bdc3c7;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease-out;
+  transform: translateY(45px);
+}
+.activeM {
+  visibility: visible;
+  opacity: 1;
+}
+.activeM + .myModal {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+#resultLink{
+  /*display: inline-block;*/
+  position: relative;
+  text-align: center;
+
+ 
+  margin-top:120px;
+}
+#resultLink a{
+  text-decoration: none;
+
+  /*color: pink;*/
+  /*font-size: 2rem;*/
+}
+ 
+.link6 {
+  /*padding: 0 30%;*/
+  display:inline-block;
+  color: #60BEE1;
+  line-height: 1;
+  position: relative;
+  white-space: nowrap;
+ 
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.link6:after { 
+  /*background-color: yellow;*/
+  content: "Result link";
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 1;
+  color: #2C9CD6;
+ 
+  width: 0;
+  text-shadow: 1px 0px 0px #60BEE1;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: 0.5s ease-out width;
+}
+.link6:hover:after {
+  width: 100%;
+}
+

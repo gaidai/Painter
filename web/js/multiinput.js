@@ -180,7 +180,6 @@ function alert (arg) {
         $(".alert").fadeIn(500).delay(4000).fadeOut(1000);
     };
 };
-
 $('.alert-close').click(function(event) {
     $(".alert").stop().stop().stop().fadeOut(200);
     console.log("hhh");
